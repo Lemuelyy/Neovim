@@ -33,10 +33,6 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-
--- Opts --
-local opts = {}
-
 -- Configs --
 require("lazy").setup("plugins")
 
